@@ -1,0 +1,22 @@
+{
+  "name": "nibbly64",
+  "version": "1.0.0",
+  "description": "A simple browser game inspired by C64 Snake.",
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "http-server . -p 8080"
+  },
+  "keywords": [
+    "game",
+    "javascript",
+    "canvas",
+    "snake",
+    "c64"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}
