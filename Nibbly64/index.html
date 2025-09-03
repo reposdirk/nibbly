@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <canvas id="gameCanvas" width="640" height="480"></canvas>
-    <div id="hud">
-        <div id="score">Score: 0</div>
-        <div id="highscore">Highscore: 0</div>
-        <div id="level">Level: 1</div>
-        <div id="wrapStatus">Wrap: Off</div>
-        <div id="pauseHint">Press P to Pause</div>
-        <div id="startHint">Press SPACE to Start</div>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="640" height="480"></canvas>
+        <div id="hud">
+            <span id="score">Score: 0</span>
+            <span id="highscore">Highscore: 0</span>
+            <span id="level">Level: 1</span>
+            <span id="wrap">Wrap: Off</span>
+        </div>
+        <div id="startHint" class="hint">Drücke SPACE zum Starten!</div>
+        <div id="pauseHint" class="hint hidden">PAUSE</div>
+        <div id="gameOverHint" class="hint hidden">GAME OVER - R zum Neustarten</div>
     </div>
     <script type="module" src="src/main.js"></script>
 </body>

@@ -1,50 +1,44 @@
 # Nibbly64
 
-Nibbly64 is a simple browser game inspired by the classic C64 Snake game. The objective is to control the snake, collect food, and grow while avoiding collisions with itself or walls.
+Ein C64-inspiriertes Snake-Spiel in Vanilla JavaScript.
 
-## Getting Started
+## Start & Installation
 
-### Local Development
+### Lokal
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   cd Nibbly64
-   ```
+```bash
+npm install
+npm run dev
+```
 
-2. Install dependencies:
-   ```
-   npm install
-   ```
+### GitHub Codespaces
 
-3. Start the development server:
-   ```
-   npm run dev
-   ```
+Das Spiel startet automatisch nach dem Öffnen des Codespaces:
 
-4. Open your browser and navigate to `http://localhost:3000` (or the specified port).
+1. npm install
+2. npm run dev
+3. Port 5173 wird automatisch weitergeleitet
 
-### Running in Codespaces
+## Steuerung
 
-To run the game in GitHub Codespaces, follow the same steps as local development. Ensure that you forward the appropriate port to access the game in your browser.
+- **Pfeiltasten** oder **WASD**: Snake steuern
+- **Leertaste**: Spiel starten
+- **P**: Pause
+- **R**: Neustart
+- **T**: Wrap-Modus (Rand-Teleport) an/aus
+- **C**: CRT-Effekt an/aus
 
-## Controls
+## Features
 
-- Arrow Keys / WASD: Move the snake
-- P: Pause the game
-- R: Restart the game
-- T: Toggle wrap (teleport to the opposite side)
-- C: Toggle CRT effect (if implemented)
+- C64-inspirierte Farbpalette und Pixel-Look
+- Klassisches Snake-Gameplay
+- Highscore-System (localStorage)
+- Level-System mit steigender Geschwindigkeit
+- Optionaler CRT-Effekt
+- Sound-Effekte
 
-## Settings
+## Bekannte Limitierungen
 
-- The game features a configurable grid size and cell dimensions.
-- The snake grows by one segment each time it collects food.
-- The game speed increases as the player collects points.
-
-## Known Limitations
-
-- The food may spawn on the snake in rare cases; this will be addressed in future updates.
-- Ensure that direction changes are debounced to prevent immediate 180° turns.
-
-Enjoy playing Nibbly64!
+- Food kann theoretisch auf der Snake spawnen
+- Bei sehr schnellem Richtungswechsel kann es zu unerwarteten Kollisionen kommen
+- Sound-Effekte sind sehr minimalistisch
